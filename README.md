@@ -1,6 +1,6 @@
 # YouTube Telegraf Plugin
 
-Gather account information from [YouTube](https://www.youtube.com/) channels.
+Gather channel information from [YouTube](https://www.youtube.com/) channels.
 
 ### Configuration
 
