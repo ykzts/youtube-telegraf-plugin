@@ -58,7 +58,7 @@ func (y *YouTube) Gather(acc telegraf.Accumulator) error {
 	}
 
 	call := y.youtubeService.Channels.
-		List("snippet,statistics").
+		List([]string{"snippet", "statistics"}).
 		Id(strings.Join(y.Channels, ",")).
 		MaxResults(50)
 
