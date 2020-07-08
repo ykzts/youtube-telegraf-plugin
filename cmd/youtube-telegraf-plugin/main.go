@@ -7,7 +7,7 @@ import (
 	"time"
 
 	_ "github.com/inabagumi/youtube-telegraf-plugin/plugins/inputs/youtube"
-	"github.com/influxdata/telegraf/plugins/inputs/execd/shim"
+	"github.com/influxdata/telegraf/plugins/common/shim"
 )
 
 var pollInterval = flag.Duration("poll_interval", 1*time.Minute, "how often to send metrics")
