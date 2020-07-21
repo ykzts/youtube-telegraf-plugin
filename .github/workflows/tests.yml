@@ -3,10 +3,10 @@ name: Tests
 on:
   push:
     branches:
-      - trunk
+      - main
   pull_request:
     branches:
-      - trunk
+      - main
 
 jobs:
   build:
