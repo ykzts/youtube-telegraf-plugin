@@ -17,8 +17,8 @@ jobs:
           - macos-latest
           - windows-latest
         go:
-          - '1.13'
           - '1.14'
+          - '1.15'
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/setup-go@v2
