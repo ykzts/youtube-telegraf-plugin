@@ -14,6 +14,7 @@ import (
 // YouTube - plugin main structure
 type YouTube struct {
 	Channels       []string `toml:"channels"`
+	Videos         []string `toml:"videos"`
 	APIKey         string   `toml:"api_key"`
 	youtubeService *youtube.Service
 }
@@ -23,6 +24,12 @@ const sampleConfig = `
   channels = [
     "UCBR8-60-B28hp2BmDPdntcQ",
     "UCnrgOD6G0y0_rcubQuICpTQ"
+  ]
+
+  ## List of videos to monitor.
+  videos = [
+    "gjoHHYnXdqs",
+    "OoCsY8odmpM"
   ]
 
   ## Google API key.
@@ -44,7 +51,7 @@ func (y *YouTube) createYouTubeService(ctx context.Context) (*youtube.Service, e
 	return youtube.NewService(ctx, option.WithAPIKey(y.APIKey))
 }
 
-// Gather GitHub Metrics
+// Gather YouTube Metrics
 func (y *YouTube) Gather(acc telegraf.Accumulator) error {
 	ctx := context.Background()
 
@@ -76,6 +83,25 @@ func (y *YouTube) Gather(acc telegraf.Accumulator) error {
 		acc.AddFields("youtube_channel", fields, tags, now)
 	}
 
+	call2 := y.youtubeService.Videos.
+		List([]string{"snippet", "statistics"}).
+		Id(strings.Join(y.Videos, ",")).
+		MaxResults(50)
+
+	resp2, err := call2.Do()
+	if err != nil {
+		return err
+	}
+
+	now2 := time.Now()
+
+	for _, item := range resp2.Items {
+		tags := getVideoTags(item)
+		fields := getVideoFields(item)
+
+		acc.AddFields("youtube_video", fields, tags, now2)
+	}
+
 	return nil
 }
 
@@ -91,6 +117,23 @@ func getFields(channelInfo *youtube.Channel) map[string]interface{} {
 		"subscribers": channelInfo.Statistics.SubscriberCount,
 		"videos":      channelInfo.Statistics.VideoCount,
 		"views":       channelInfo.Statistics.ViewCount,
+	}
+}
+
+func getVideoTags(videoInfo *youtube.Video) map[string]string {
+	return map[string]string{
+		"id":    videoInfo.Id,
+		"title": videoInfo.Snippet.Title,
+	}
+}
+
+func getVideoFields(videoInfo *youtube.Video) map[string]interface{} {
+	return map[string]interface{}{
+		"comments":  videoInfo.Statistics.CommentCount,
+		"dislikes":  videoInfo.Statistics.DislikeCount,
+		"favorites": videoInfo.Statistics.FavoriteCount,
+		"likes":     videoInfo.Statistics.LikeCount,
+		"views":     videoInfo.Statistics.ViewCount,
 	}
 }
 
