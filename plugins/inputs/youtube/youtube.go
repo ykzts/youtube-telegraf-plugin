@@ -64,42 +64,46 @@ func (y *YouTube) Gather(acc telegraf.Accumulator) error {
 		y.youtubeService = service
 	}
 
-	call := y.youtubeService.Channels.
-		List([]string{"snippet", "statistics"}).
-		Id(strings.Join(y.Channels, ",")).
-		MaxResults(50)
+	if len(y.Channels) > 0 {
+		call := y.youtubeService.Channels.
+			List([]string{"snippet", "statistics"}).
+			Id(strings.Join(y.Channels, ",")).
+			MaxResults(50)
 
-	resp, err := call.Do()
-	if err != nil {
-		return err
+		resp, err := call.Do()
+		if err != nil {
+			return err
+		}
+
+		now := time.Now()
+
+		for _, item := range resp.Items {
+			tags := getTags(item)
+			fields := getFields(item)
+
+			acc.AddFields("youtube_channel", fields, tags, now)
+		}
 	}
 
-	now := time.Now()
+	if len(y.Videos) > 0 {
+		call := y.youtubeService.Videos.
+			List([]string{"snippet", "statistics"}).
+			Id(strings.Join(y.Videos, ",")).
+			MaxResults(50)
 
-	for _, item := range resp.Items {
-		tags := getTags(item)
-		fields := getFields(item)
+		resp, err := call.Do()
+		if err != nil {
+			return err
+		}
 
-		acc.AddFields("youtube_channel", fields, tags, now)
-	}
+		now2 := time.Now()
 
-	call2 := y.youtubeService.Videos.
-		List([]string{"snippet", "statistics"}).
-		Id(strings.Join(y.Videos, ",")).
-		MaxResults(50)
+		for _, item := range resp.Items {
+			tags := getVideoTags(item)
+			fields := getVideoFields(item)
 
-	resp2, err := call2.Do()
-	if err != nil {
-		return err
-	}
-
-	now2 := time.Now()
-
-	for _, item := range resp2.Items {
-		tags := getVideoTags(item)
-		fields := getVideoFields(item)
-
-		acc.AddFields("youtube_video", fields, tags, now2)
+			acc.AddFields("youtube_video", fields, tags, now2)
+		}
 	}
 
 	return nil
