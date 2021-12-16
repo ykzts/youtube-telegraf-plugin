@@ -590,7 +590,6 @@ github.com/dgraph-io/ristretto v0.0.1/go.mod h1:T40EBc7CJke8TkpiYfGGKAeFjSaxuFXh
 github.com/dgraph-io/ristretto v0.0.2/go.mod h1:KPxhHT9ZxKefz+PCeOGsrHpl1qZ7i70dGTu2u+Ahh6E=
 github.com/dgraph-io/ristretto v0.1.0/go.mod h1:fux0lOrBhrVCJd3lcTHsIJhq1T2rokOu6v9Vcb3Q9ug=
 github.com/dgrijalva/jwt-go v0.0.0-20170104182250-a601269ab70c/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
-github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/dgryski/go-bitstream v0.0.0-20180413035011-3522498ce2c8/go.mod h1:VMaSuZ+SZcx/wljOQKvp5srsbCiKDEb6K2wC4+PiBmQ=
 github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2/go.mod h1:SqUrOPUnsFjfmXRMNPybcSiG0BgUW2AuFH8PAnS2iTw=
@@ -1182,8 +1181,8 @@ github.com/influxdata/roaring v0.4.13-0.20180809181101-fc520f41fab6/go.mod h1:bS
 github.com/influxdata/tail v1.0.1-0.20210707231403-b283181d1fa7 h1:0rQOs1VHLVFpAAOIR0mJEvVOIaMYFgYdreeVbgI9sII=
 github.com/influxdata/tail v1.0.1-0.20210707231403-b283181d1fa7/go.mod h1:VeiWgI3qaGdJWust2fP27a6J+koITo/1c/UhxeOxgaM=
 github.com/influxdata/tdigest v0.0.0-20181121200506-bf2b5ad3c0a9/go.mod h1:Js0mqiSBE6Ffsg94weZZ2c+v/ciT8QRHFOap7EKDrR0=
-github.com/influxdata/telegraf v1.21.0 h1:z9/h5DxYRHwgOX0S3u+4xvoNW59GJpxZrEOueP8cpoA=
-github.com/influxdata/telegraf v1.21.0/go.mod h1:NYtO7B7DmFjhek69fZjlqRIhvA7pwd6+TWGA7CmTgzM=
+github.com/influxdata/telegraf v1.21.1 h1:oX4XkrTWxI/Nd26eLpAe0L3a/UqrSensxGwZ7p4tIFQ=
+github.com/influxdata/telegraf v1.21.1/go.mod h1:z5Z8l0HQohmpcQxkZYRuI6i2zqEnZXoZtAg1KM0kk1o=
 github.com/influxdata/toml v0.0.0-20190415235208-270119a8ce65 h1:vvyMtD5LTJc1W9sQKjDkAWdcg0478CszSdzlHtiAXCY=
 github.com/influxdata/toml v0.0.0-20190415235208-270119a8ce65/go.mod h1:zApaNFpP/bTpQItGZNNUMISDMDAnTXu9UqJ4yT3ocz8=
 github.com/influxdata/usage-client v0.0.0-20160829180054-6d3895376368/go.mod h1:Wbbw6tYNvwa5dlB6304Sd+82Z3f7PmVZHVKU637d4po=
@@ -1803,8 +1802,8 @@ github.com/securego/gosec v0.0.0-20200203094520-d13bb6d2420c/go.mod h1:gp0gaHj0W
 github.com/securego/gosec/v2 v2.6.1/go.mod h1:I76p3NTHBXsGhybUW+cEQ692q2Vp+A0Z6ZLzDIZy+Ao=
 github.com/segmentio/kafka-go v0.1.0/go.mod h1:X6itGqS9L4jDletMsxZ7Dz+JFWxM6JHfPOCvTvk+EJo=
 github.com/segmentio/kafka-go v0.2.0/go.mod h1:X6itGqS9L4jDletMsxZ7Dz+JFWxM6JHfPOCvTvk+EJo=
-github.com/sensu/sensu-go/api/core/v2 v2.9.0 h1:NanHMIWbrHP/L4Ge0V1x2+0G9bxFHpvhwjdr3wSF9Vg=
-github.com/sensu/sensu-go/api/core/v2 v2.9.0/go.mod h1:QcgxKxydmScE66hLBTzbFhhiPSR/JHqUjNi/+Lelh6E=
+github.com/sensu/sensu-go/api/core/v2 v2.12.0 h1:Mu1P+xAONXmMpX4Qf/j9/j9I4JYdw1HzD1uVGe2BEgw=
+github.com/sensu/sensu-go/api/core/v2 v2.12.0/go.mod h1:urUHDTHcyYqM2XK5mXMF3JdeiOjXCKhwW+z8fXNsZfs=
 github.com/sergi/go-diff v1.0.0/go.mod h1:0CfEIISq7TuYL3j771MWULgwwjU+GofnZX9QAmXWZgo=
 github.com/shazow/go-diff v0.0.0-20160112020656-b6b7b6733b8c/go.mod h1:/PevMnwAxekIXwN8qQyfc5gl2NlkB3CQlkizAbOkeBs=
 github.com/shirou/gopsutil v3.21.5+incompatible h1:OloQyEerMi7JUrXiNzy8wQ5XN+baemxSl12QgIzt0jc=
