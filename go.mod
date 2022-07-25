@@ -3,7 +3,7 @@ module github.com/inabagumi/youtube-telegraf-plugin
 go 1.18
 
 require (
-	github.com/influxdata/telegraf v1.23.2
+	github.com/influxdata/telegraf v1.23.3
 	github.com/stretchr/testify v1.8.0
 	google.golang.org/api v0.88.0
 )
