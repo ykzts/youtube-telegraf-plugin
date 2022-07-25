@@ -147,7 +147,7 @@ github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15/go.mod h1:OMCwj8V
 github.com/aliyun/alibaba-cloud-sdk-go v1.61.1529 h1:qAt5MZ3Ukwx/JMAiaagQhNQMBZLcmJbnweBoK3EeHxI=
 github.com/amir/raidman v0.0.0-20170415203553-1ccc43bfb9c9 h1:FXrPTd8Rdlc94dKccl7KPmdmIbVh/OjelJ8/vgMRzcQ=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
-github.com/antchfx/jsonquery v1.1.5 h1:1YWrNFYCcIuJPIjFeOP5b6TXbLSUYY8qqxWbuZOB1qE=
+github.com/antchfx/jsonquery v1.2.0 h1:P7hhEM/+YQA5FPbBk+11QbmAtraSIu4d3FXXLtRzmho=
 github.com/antchfx/xmlquery v1.3.9 h1:Y+zyMdiUZ4fasTQTkDb3DflOXP7+obcYEh80SISBmnQ=
 github.com/antchfx/xpath v1.2.1 h1:qhp4EW6aCOVr5XIkT+l6LJ9ck/JsUH/yyauNgTQkBF8=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
@@ -670,8 +670,8 @@ github.com/influxdata/promql/v2 v2.12.0/go.mod h1:fxOPu+DY0bqCTCECchSRtWfc+0X19y
 github.com/influxdata/roaring v0.4.13-0.20180809181101-fc520f41fab6/go.mod h1:bSgUQ7q5ZLSO+bKBGqJiCBGAl+9DxyW63zLTujjUlOE=
 github.com/influxdata/tail v1.0.1-0.20210707231403-b283181d1fa7 h1:0rQOs1VHLVFpAAOIR0mJEvVOIaMYFgYdreeVbgI9sII=
 github.com/influxdata/tdigest v0.0.0-20181121200506-bf2b5ad3c0a9/go.mod h1:Js0mqiSBE6Ffsg94weZZ2c+v/ciT8QRHFOap7EKDrR0=
-github.com/influxdata/telegraf v1.23.2 h1:dzdw2l7uP/1H2n8+PqlCdl+u/PobGGAhcK4DTRxe1Hg=
-github.com/influxdata/telegraf v1.23.2/go.mod h1:iwLr7fuCdHganjxehJWJ7AdmTd1q5V9L4Pi3FFkFqX4=
+github.com/influxdata/telegraf v1.23.3 h1:obFbkBCAWKQbJGcYqFITHtmxxQ8/nE9pqvZQ3Uhsnnw=
+github.com/influxdata/telegraf v1.23.3/go.mod h1:DA7kymhpNGAHGFW8sTW5Lg0jPQ4ff6XOVwiQrjr4ipg=
 github.com/influxdata/toml v0.0.0-20190415235208-270119a8ce65 h1:vvyMtD5LTJc1W9sQKjDkAWdcg0478CszSdzlHtiAXCY=
 github.com/influxdata/toml v0.0.0-20190415235208-270119a8ce65/go.mod h1:zApaNFpP/bTpQItGZNNUMISDMDAnTXu9UqJ4yT3ocz8=
 github.com/influxdata/usage-client v0.0.0-20160829180054-6d3895376368/go.mod h1:Wbbw6tYNvwa5dlB6304Sd+82Z3f7PmVZHVKU637d4po=
