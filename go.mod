@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/influxdata/telegraf v1.24.0
 	github.com/stretchr/testify v1.8.0
-	google.golang.org/api v0.95.0
+	google.golang.org/api v0.96.0
 )
 
 require (
@@ -42,7 +42,7 @@ require (
 	github.com/tinylib/msgp v1.1.6 // indirect
 	github.com/wavefronthq/wavefront-sdk-go v0.10.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
-	golang.org/x/net v0.0.0-20220809184613-07c6da5e1ced // indirect
+	golang.org/x/net v0.0.0-20220909164309-bea034e7d591 // indirect
 	golang.org/x/oauth2 v0.0.0-20220822191816-0ebed06d0094 // indirect
 	golang.org/x/sys v0.0.0-20220804214406-8e32c043e418 // indirect
 	golang.org/x/text v0.3.7 // indirect
