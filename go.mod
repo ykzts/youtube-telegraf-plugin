@@ -3,7 +3,7 @@ module github.com/inabagumi/youtube-telegraf-plugin
 go 1.19
 
 require (
-	github.com/influxdata/telegraf v1.24.3
+	github.com/influxdata/telegraf v1.24.4
 	github.com/stretchr/testify v1.8.1
 	google.golang.org/api v0.104.0
 )
@@ -11,9 +11,9 @@ require (
 require (
 	cloud.google.com/go/compute v1.13.0 // indirect
 	cloud.google.com/go/compute/metadata v0.2.2 // indirect
-	github.com/BurntSushi/toml v1.2.0 // indirect
+	github.com/BurntSushi/toml v1.2.1 // indirect
 	github.com/alecthomas/participle v0.4.1 // indirect
-	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
+	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137 // indirect
 	github.com/benbjohnson/clock v1.3.0 // indirect
 	github.com/blues/jsonata-go v1.5.4 // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
