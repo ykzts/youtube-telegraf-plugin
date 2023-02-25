@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/influxdata/telegraf v1.24.4
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	google.golang.org/api v0.110.0
 )
 
