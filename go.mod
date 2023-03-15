@@ -1,6 +1,6 @@
 module github.com/inabagumi/youtube-telegraf-plugin
 
-go 1.19
+go 1.20
 
 require (
 	github.com/influxdata/telegraf v1.26.0
