@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/influxdata/telegraf v1.26.0
 	github.com/stretchr/testify v1.8.4
-	google.golang.org/api v0.147.0
+	google.golang.org/api v0.154.0
 )
 
 require (
